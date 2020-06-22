@@ -18,7 +18,8 @@ import java.util.UUID;
 public class UploadController {
     @Transient
     private UUID uuidImg = UUID.randomUUID();
-    private static String UPLOADED_FOLDER = "target/classes/static/uploaded/";
+//    private static String UPLOADED_FOLDER = "target/classes/static/uploaded/";
+    private static String UPLOADED_FOLDER = "src/main/resources/static/uploaded";
 
     @GetMapping("/upload")
     public String index() {
